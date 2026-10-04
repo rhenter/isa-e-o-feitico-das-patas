@@ -1,12 +1,18 @@
 # Isa e o Feitiço das Patas
 
-As Aventuras de Papai Fabiano e sua filhinha Isa, em uma edição preparada para o Safari no iPhone.
+Uma aventura de Isa e seu papai Fabiano, transformado em cachorro por um feitiço. Esta edição foi preparada para jogar no Safari do iPhone.
 
-O pacote não é um aplicativo IPA da App Store. Abrir o ZIP ou o HTML no app Arquivos não instala nem executa esta edição como jogo no Safari.
+Para jogar no iPhone, acesse o jogo pelo Safari usando uma das opções abaixo: um servidor no computador pela rede Wi-Fi ou um site publicado em HTTPS. Abrir o HTML diretamente no app Arquivos não inicia o jogo no Safari.
 
 ## Jogar no Wi-Fi de casa com um computador
 
-1. Extraia o ZIP no computador; não deixe os arquivos dentro do ZIP.
+1. Clone o [repositório do GitHub](https://github.com/rhenter/isa-e-o-feitico-das-patas) no computador e entre na pasta do projeto:
+
+   ```sh
+   git clone https://github.com/rhenter/isa-e-o-feitico-das-patas.git
+   cd isa-e-o-feitico-das-patas
+   ```
+
 2. Instale o [Python 3](https://www.python.org/downloads/), se necessário.
 3. Inicie o servidor:
    - **Windows:** abra `INICIAR-NO-WINDOWS.bat`.
@@ -31,9 +37,9 @@ A pasta `jogo` contém os arquivos prontos para uma hospedagem de site estático
 2. Toque em **Compartilhar** e em **Adicionar à Tela de Início**.
 3. Se aparecer a opção **Abrir como App da Web**, ative-a.
 
-Esta edição não promete funcionamento offline: mantenha acesso à rede.
+O funcionamento offline não é garantido. Mantenha a conexão com a rede durante o jogo.
 
-A publicação atualizada no Sites ficou bloqueada pelo ambiente. O pacote não atualiza automaticamente o jogo disponível no link online anterior.
+Para atualizar uma versão já publicada, envie os arquivos atualizados da pasta `jogo` para a hospedagem.
 
 ## Controles na tela
 
@@ -49,8 +55,16 @@ A publicação atualizada no Sites ficou bloqueada pelo ambiente. O pacote não 
 
 ## Conteúdo e suporte ao iPhone
 
-Esta versão inclui as seis fases, o chefe de pedra, a bruxa final reforçada e o **Course Maker**. No criador, escolha **Dupla local** para jogar com Isa e Luz.
+A aventura conta com seis fases, um confronto com o chefe de pedra e uma batalha final contra a bruxa. Com o editor **Course Maker**, você também pode criar suas próprias fases e selecionar **Dupla local** para jogar com Isa e Luz.
 
-Também inclui área segura para iPhone, tela que acompanha a rotação, multitoque, ícone de Tela de Início e trilha controlada por Web Audio.
+A interface respeita as áreas reservadas da tela do iPhone, acompanha a rotação do aparelho e permite usar vários controles por toque ao mesmo tempo. Também inclui um ícone para a Tela de Início e uma trilha sonora que pode ser ativada ou desativada.
 
 A lógica foi verificada por simulação. Ainda falta validação em um iPhone físico.
+
+## Créditos
+
+Este projeto foi criado com o **Course Maker**. Agradecemos aos responsáveis pela ferramenta utilizada na criação do jogo.
+
+## Licença
+
+Este repositório inclui a [licença MIT](LICENSE). Componentes e recursos de terceiros, quando presentes, continuam sujeitos às respectivas licenças e condições de uso. Os créditos ao Course Maker não substituem essas condições.
