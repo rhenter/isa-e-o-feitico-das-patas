@@ -1,0 +1,15 @@
+/* Safe-area layout for Safari and the iPhone Home Screen web app. */
+@media(pointer:coarse){
+ html,body{min-height:100%;-webkit-text-size-adjust:100%}.shell{padding-left:max(8px,env(safe-area-inset-left));padding-right:max(8px,env(safe-area-inset-right));padding-top:env(safe-area-inset-top)}
+ .game,.touch-controls,.touch-controls button{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}.touch-controls button{min-width:48px;min-height:52px}
+ .touch-controls button.is-held{background:#ffedac;color:#23493f;transform:scale(.95)}.mobile-note{padding-bottom:env(safe-area-inset-bottom)}
+ .ios-install{display:block;font-size:12px;line-height:1.4;color:#c5dfde;text-align:center;margin:8px 12px 12px}.ios-install[hidden]{display:none}
+}
+@media(pointer:coarse) and (orientation:landscape){
+ body{overflow:hidden}.shell{padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom);max-width:none}header{height:34px}header .brand{font-size:10px}.top-actions{gap:8px}.top-actions .icon-btn{height:29px;width:34px}.game{width:100%;height:calc(var(--app-height,100dvh) - 38px - env(safe-area-inset-top) - env(safe-area-inset-bottom));max-height:none;aspect-ratio:auto;border-radius:12px}
+ footer,.mobile-note,.ios-install{display:none!important}.touch-controls{left:14px;right:14px;bottom:10px}.touch-controls button{width:54px;height:52px}.touch-controls .touch-jump{width:64px}.hud{top:8px}.hud-left{transform:scale(.62)}.objective{top:57px;transform:scale(.62)}.power-hud{top:96px;transform:scale(.64)}.boss-hud{top:58px}.cinema-caption{bottom:13px}.cinema-caption p{font-size:12px}.start-copy{top:6%;width:45%}.start-copy p{font-size:12px}.start-copy h1{font-size:clamp(37px,10dvh,58px);margin:8px 0}.chapter-tag{font-size:7px}.continue{margin-top:4px}.start-note{display:none}.modal{padding:8px}.modal-card{max-height:96%;padding:14px 24px}.modal-card p{font-size:13px;line-height:1.35}
+}
+@media(pointer:coarse) and (orientation:portrait){
+ .game{height:calc(var(--app-height,100dvh) - 125px - env(safe-area-inset-top) - env(safe-area-inset-bottom));min-height:390px;aspect-ratio:auto}.start-copy{top:8%}.start-copy h1{font-size:clamp(54px,15vw,77px)}.start-copy p{font-size:14px}.start-note{display:none}.touch-controls{bottom:15px;left:10px;right:10px}.touch-controls>div{gap:5px}.touch-controls button{width:48px}.touch-controls .touch-jump{width:54px}.power-hud{top:120px}.dialogue{bottom:87px}
+}
+@media(display-mode:standalone) and (pointer:coarse){.ios-install{display:none!important}}
