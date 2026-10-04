@@ -6,13 +6,7 @@ Para jogar no iPhone, acesse o jogo pelo Safari usando uma das opções abaixo: 
 
 ## Jogar no Wi-Fi de casa com um computador
 
-1. Clone o [repositório do GitHub](https://github.com/rhenter/isa-e-o-feitico-das-patas) no computador e entre na pasta do projeto:
-
-   ```sh
-   git clone https://github.com/rhenter/isa-e-o-feitico-das-patas.git
-   cd isa-e-o-feitico-das-patas
-   ```
-
+1. [Baixe o projeto em ZIP pelo GitHub](https://github.com/rhenter/isa-e-o-feitico-das-patas/archive/refs/heads/main.zip) no computador. Extraia o arquivo e abra a pasta `isa-e-o-feitico-das-patas-main`. Os arquivos precisam estar extraídos antes de continuar.
 2. Instale o [Python 3](https://www.python.org/downloads/), se necessário.
 3. Inicie o servidor:
    - **Windows:** abra `INICIAR-NO-WINDOWS.bat`.
